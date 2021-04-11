@@ -5,64 +5,131 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Raleway', sans-serif;
-}
-ul,li{
-    list-style:none;
-}
-a{
-    text-decoration: none;
-}
+
 .mb{
     margin-bottom:20px;
 }
 
 
 
-.content{display: flex;border:1px solid rgba(110, 190, 226,.3); }
-.content .left{ height: auto;padding:0 0 !important; }
-.content .left .left-link{height:100%;width:100%;}
-.content .left .left-link .left-img {height:100%;width:100%;padding:0 0 !important;object-fit: cover;object-position: center; }
-.content .right{padding:0 0 !important;}
-.content .right .items{height: 100%;}
-.content .right .items .item{height: 25%; border-bottom:1px solid #e9ecef;}
-
-.content .right .items .item .item-link{height:100%;width:100%;color:#333;}
-
-
-.content .right .items .item .item-link .choice{height:100%;width:100%;display: flex;flex-direction: row;justify-content: space-between;align-items: center;padding-left: 15px;transition: all .3s;}
-.content .right .items .item .item-link .choice:hover{transform:scale(1.1) ;
+.content{
+    display: flex;
+    border:1px solid rgba(110, 190, 226,.3); 
 }
-.content .right .items .item .item-link .choice .info{
-    padding-left: 8px; display: flex;align-items: center;flex-direction: row;justify-content: space-between;}
-.content .right .items .item .item-link .choice .info .right-img{border-radius: 50%; }
-.content .right .items .item .item-link .choice .info .text{margin-left: 10px;}
-.content .right .items .item .item-link .choice .icon{color:tomato;padding-right: 25px;}
+.content .left{ 
+    height: auto;
+    padding:0 0 !important;
+ }
+.left .left-link{
+    height:100%;
+    width:100%;
+}
+.left .left-link .left-img {
+    height:100%;
+    width:100%;
+    padding:0 0 !important;
+    object-fit: cover;
+    object-position: center;
+ }
+.content .right{
+    padding:0 0 !important;
+}
+.right .items{height: 100%;
+}
+.right .items .item{
+    height: 25%;
+    border-bottom:1px solid #e9ecef;
+}
+
+.right .items .item .item-link{
+    height:100%;
+    width:100%;
+    color:#333;
+}
+
+
+.right .items .item .item-link .choice{
+    height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    transition: all .3s;
+}
+.right .items .item .item-link .choice:hover{
+    transform:scale(1.1);
+    
+}
+.right .items .item .item-link .choice .info{
+    padding-left: 8px;
+     display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.right .items .item .item-link .choice .info .right-img{
+    border-radius: 50%;
+ }
+.right .items .item .item-link .choice .info .text{
+    margin-left: 10px;
+}
+.right .items .item .item-link .choice .icon{
+    color:tomato;
+    padding-right: 25px;
+}
 
 @media (max-width:1440px){
-    .content{max-width: 1300px; font-size:18px;} 
-   .content .left{width: 786px;}
-   .content .right{width:393px}
-   .content .right .items .item .item-link .choice .icon{padding-right:15px;} 
+    .content{
+        max-width: 1300px;
+        font-size:18px;
+    } 
+   .content .left{
+       width: 786px;
+    }
+   .content .right{
+       width:393px
+    }
+   .right .items .item .item-link .choice .icon{
+       padding-right:15px;
+} 
 
 
 }
 
 
 @media (max-width:991px){
-     .content{max-width: 930px; font-size:15px;} 
-    .content .left{width: 500px;}
-    .content .right{width:250px}
-    .content .right .items .item .item-link .choice .icon{padding-right:10px;}
+     .content{
+         max-width: 930px;
+         font-size:15px;
+    } 
+    .content .left{
+        width: 500px;
+    }
+    .content .right{
+        width:250px
+    }
+    .right .items .item .item-link .choice .icon{
+        padding-right:10px;
+    }
  
 
 }
 @media (max-width:768px){
-    .content{max-width: 720px; font-size:10px;} 
-   .content .left{width: 360px;}
-   .content .right{width:180px}
-   .content .right .items .item .item-link .choice .icon{padding-right:5px;}
+    .content{
+        max-width: 720px;
+        font-size:10px;
+    } 
+   .content .left{
+       width: 360px;
+}
+   .content .right{
+       width:180px;
+    }
+   .right .items .item .item-link .choice .icon{
+       padding-right:5px;
+}
    
    
 
@@ -77,5 +144,7 @@ a{
         align-self: flex-start;
         width:100%;
     }
-    .content .right .items .item .item-link .choice .icon{padding-right:20px;}
+    .right .items .item .item-link .choice .icon{
+        padding-right:20px;
+        
 }
